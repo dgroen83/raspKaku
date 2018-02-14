@@ -17,9 +17,11 @@ good luck, have fun
 
 
 //personal comment
+
 git clone git://git.drogon.net/wiringPi
 
 cd wiringPi
+
 ./build
 
 git clone https://github.com/chaanstra/raspKaku
@@ -27,4 +29,8 @@ git clone https://github.com/chaanstra/raspKaku
 in bijv kaku.cpp de juistepin_out selecteren (staat standaard op 15)
 
 cd raspKaku
+
 g++ -o kaku kaku.cpp -I/usr/local/include -L/usr/local/lib -lwiringPi
+
+
+Niet vergeten /usr/bin/gpio export 18 out
