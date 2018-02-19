@@ -34,4 +34,4 @@ g++ -o kaku kaku.cpp -I/usr/local/include -L/usr/local/lib -lwiringPi
 
 Niet vergeten:
 sudo nano /etc/init.d/domoticz.sh
-/usr/bin/gpio export 18 out
+/usr/local/bin/gpio export 18 out
