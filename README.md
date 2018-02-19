@@ -26,11 +26,12 @@ cd wiringPi
 
 git clone https://github.com/chaanstra/raspKaku
 
-in bijv kaku.cpp de juistepin_out selecteren (staat standaard op 15)
+in bijv kaku.cpp de juiste pin_out selecteren (staat standaard op 15)
 
 cd raspKaku
 
 g++ -o kaku kaku.cpp -I/usr/local/include -L/usr/local/lib -lwiringPi
 
-
-Niet vergeten /usr/bin/gpio export 18 out
+Niet vergeten:
+sudo nano /etc/init.d/domoticz.sh
+/usr/bin/gpio export 18 out
